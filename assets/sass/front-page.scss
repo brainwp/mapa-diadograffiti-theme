@@ -45,7 +45,15 @@ html, body {
 	background-size: cover;
 	padding-bottom: 20px;
 	box-shadow: 3px 8px 4px 0px rgba(0, 0, 0, 0.53);
-
+	@media screen and ( max-width: 700px ) {
+		display: none;
+		.select2-container {
+			width:100% !important;
+			.select2-search__field {
+				width: 100% !important;
+			}
+		}
+	}
 	#icon-help {
 		display: inline-block;
 		width:20px;

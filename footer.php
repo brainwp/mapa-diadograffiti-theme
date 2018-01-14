@@ -9,11 +9,22 @@
  * @since 2.2.0
  */
 ?>
+<a href="#" id="button-search-map">
+	<span class="btn-text">
+		Buscar evento no mapa
+	</span>
+</a>
 <?php if ( ! isset( $_GET[ 'embed'] ) ) : ?>
 	<footer id="footer-container" class="col-md-12">
 		<span class="icon"></span>
 		<div class="col-md-12 footer-open text-center" data-open="false">
-			<h3><?php _e( 'Clique e veja quem apoia esse projeto', 'odin');?></h3>
+			<?php if ( wp_is_mobile() ) : ?>
+				<span class="close-quem-apoia">
+					<?php _e( 'Fechar (x)', 'odin' );?>
+				</span>
+			<?php else : ?>
+				<h3><?php _e( 'Clique e veja quem apoia esse projeto', 'odin');?></h3>
+			<?php endif;?>
 		</div><!-- .col-md-12 footer-open -->
 		<div class="footer-toggle col-md-12">
 			<div class="container">

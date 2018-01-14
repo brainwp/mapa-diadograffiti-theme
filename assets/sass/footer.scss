@@ -17,6 +17,13 @@
 	position: fixed;
 	z-index:102;
 	transition:1s ease all;
+	@media screen and ( max-width: 700px ) {
+		display: none;
+		.close-quem-apoia {
+			color:white;
+			font-size: 21px;
+		}
+	}
 	.footer-toggle {
 		height:0;
 		background:url( '../images/bg-footer-toggle.png' ) no-repeat;
@@ -75,4 +82,28 @@
 body.open-pin #footer-container {
 	opacity: 0;
 	transition:1s ease all;
+}
+#button-search-map {
+	background: #ea7a06;
+	border: none;
+	border-radius: 0;
+	position: absolute;
+	bottom: 65px;
+	color: #FFF;
+	padding-top: 12px;
+	padding-bottom: 15px;
+	font-size: 17px;
+	padding-left:11px;
+	padding-right:35px;
+	text-align: left;
+	width:100%;
+	span.btn-text {
+		height: 38px;
+		padding-bottom: 15px;
+		width: 100%;
+		background: url("../images/bg-filters-btn.png") right no-repeat;
+		display: inline-block;
+		font-size: 21px;
+		padding-top: 2px;
+	}
 }

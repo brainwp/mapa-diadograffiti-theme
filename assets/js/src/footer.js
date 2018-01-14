@@ -3,8 +3,7 @@ jQuery(document).ready(function($) {
 		if ( $( this ).attr( 'data-open' ) == 'false' ) {
 			$( '.footer-toggle' ).addClass( 'open' )
 			$( this ).attr( 'data-open', 'true' );
-		}
-		else {
+		} else {
 			$( '.footer-toggle' ).removeClass( 'open' );
 			$( this ).attr( 'data-open', 'false' );
 		}

@@ -2,6 +2,14 @@ jQuery(document).ready(function($) {
 	if ( $( '#map').length < 1 ) {
 		return;
 	}
+	/*
+	 *
+	 * Função para abrir o box de busca no mobile
+	*/
+	$( '#button-search-map' ).on( 'click', function( e ) {
+		$( '#filters' ).fadeIn( 1200 );
+		$( '#button-search-map' ).fadeOut( 1200 );
+	});
 	var getQueryStrings = function () {
 		var assoc  = {};
 		var decode = function (s) { return decodeURIComponent(s.replace(/\+/g, " ")); };

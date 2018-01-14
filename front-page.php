@@ -76,7 +76,7 @@ get_header(); ?>
 		</form>
 	</div><!-- .col-md-12 -->
 </div><!-- #filters.col-md-4 pull-right -->
-<div id="open-pin" class="col-md-4 pull-right">
+<div id="open-pin" class="col-md-4 col-xs-10 pull-right">
 </div><!-- #open-pin.col-md-4 pull-right -->
 <div id="map"></div><!-- #map -->
 <?php

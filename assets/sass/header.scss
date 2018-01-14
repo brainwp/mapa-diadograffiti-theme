@@ -4,6 +4,7 @@
 	}
 	html {
 		margin:0 !important;
+		margin-top:0 !important;
 	}
 }
 #header {
@@ -29,6 +30,15 @@
 		right: 15px;
 		color:#FFF;
 		font-size: 20px;
+		@media screen and ( max-width: 700px ) {
+			display: none;
+		}
+	}
+	.navbar-brand {
+		@media screen and ( max-width: 350px ) {
+			font-size:17px;
+		}
+
 	}
 	.navbar-default {
 		border:transparent !important;
@@ -47,6 +57,15 @@
 			padding-top: 6px;
 			padding-bottom:6px;
 		}
+		@media screen and ( max-width: 700px ) {
+			width:100%;
+		}
+		.esconder-desktop {
+			@media screen and ( min-width: 700px ) {
+				display: none;
+			}
+		}
+
 	}
 	.header-image {
 		position: absolute;
