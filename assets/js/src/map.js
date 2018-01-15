@@ -40,6 +40,9 @@ jQuery(document).ready(function($) {
 		$( '#open-pin' ).removeClass( 'open' );
 		$.get( url, data, function( response ) {
 			$( '#open-pin' ).html( response );
+			if ( $( window ).width() <= 700 ) {
+				$( '#button-search-map' ).fadeOut( 800 );
+			}
 			$( '#open-pin' ).addClass( 'open' );
 			$( 'body' ).addClass( 'open-pin' );
 			$( 'body' ).removeClass( 'loading' );
@@ -75,6 +78,9 @@ jQuery(document).ready(function($) {
 		$( '#open-pin' ).removeClass( 'open' );
 		$( 'body' ).removeClass( 'open-pin' );
 		$( 'html' ).removeAttr( 'style');
+		if ( $( window ).width() <= 700 ) {
+			$( '#button-search-map' ).fadeIn( 800 );
+		}
 	});
 	$( '#open-pin' ).on( 'click', '.ligthbox-open', function( e ) {
 		e.preventDefault();
